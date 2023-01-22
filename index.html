@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>The "Office" Hour</title>
+</head>
+
+<body>
+    <div class="bg-1">
+        <h1 onclick="switchText(this)">Office Hour</h1>
+    </div>
+    <div class="bg-2">
+        <div class="col">
+            <img class="photo" src="./assets/quote-photo.jpg" alt="quote photo" />
+            <button onclick="switchQuote()" class="btn">Quote Changer</button>
+        </div>
+        <p id="quote">“WOULD I RATHER BE FEARED OR LOVED? EASY. BOTH. I WANT PEOPLE TO BE AFRAID OF HOW MUCH THEY LOVE
+            ME.”</p>
+    </div>
+    <div class="bg-1">
+        <div class="col">
+            <h2>Which Jim is the Imposter?</h2>
+            <div class="row">
+                <img class="photo-jim" id="jim-2" src="./assets/asianjim.jpg" alt="jim" onclick="jimOrJim(2)">
+                <img class="photo-jim" id="jim-1" src="./assets/jim.jpg" alt="jim" onclick="jimOrJim(1)">
+            </div>
+            <p id="correct-jim">Incorrect! <br>"Identity Theft is NOT a Joke, Jim!"</p>
+            <p id="incorrect-jim">Correct!</p>
+        </div>
+    </div>
+    <div class="bg-2">
+        <div>
+            <h2>Who spilled the chili?</h2>
+            <hr>
+            <br>
+            <button class="btn" onclick="spillChili()">Spill the chili</button>
+        </div>
+
+        <img id="chili" src="./assets/kevin.jpg" alt="kevin spilling chili">
+    </div>
+    <div class="bg-1">
+        <div class="mug-container">
+            <img id="mug-photo" src="./assets/cup.png" alt="coffee cup">
+            <p id="mug-text"></p>
+        </div>
+        <input id="mug-input" type="text" oninput="writeOnMug()" placeholder="write on the mug!">
+    </div>
+</body>
+
+</html>
