@@ -38,3 +38,29 @@ function spillChili(){
 function writeOnMug(){
     mugText.innerText = mug.value
 }
+
+function selectFavorites(){
+    var result = document.getElementById('result')
+    var favorite = document.getElementById('favorite')
+    result.innerText = `My favorite character is ${favorite.value}!`
+}
+
+function classButton(id){
+    const classText = document.getElementById('paragraph')
+    if(id == 1){
+        classText.classList.add("red-bg")
+    }
+    else if(id == 2){
+        classText.classList.remove('blue-text')
+    }
+    else if(id == 3){
+        classText.classList.toggle('green-text')
+    }
+}
+
+function mathing(num1, num2, color, size){
+    var math = document.getElementById('math')
+    math.innerText = num1 * num2
+    math.style.color = color
+    math.style.fontSize = size
+}

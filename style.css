@@ -134,3 +134,90 @@ input{
 .mug-container{
     overflow-wrap: break-word;
 }
+
+.bg-2-a {
+    background:url('./assets/dunder.png');
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1%;
+}
+
+.red-bg {
+    background-color: red;
+}
+
+.blue-text {
+    color: blue;
+}
+
+.green-text {
+    color: green;
+}
+
+#favorite{
+    background-color: whitesmoke;
+    border: 3px solid red;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+    padding: 1%;
+}
+
+#result{
+    background-color: whitesmoke;
+    border: 3px solid red;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+    padding: 1%;
+}
+
+#paragraph{
+    text-align: center;
+    margin-right: 5px;
+}
+
+#dwight{
+    width: 60%;
+    border-radius: 10px;
+}
+
+.bg-1-dwight {
+    background-color: cadetblue;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.dwight-layout{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    gap: 10px;
+    width: 50%;
+}
+
+.dwight-layout-btn{
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+    width: 50%;
+    gap: 10px;
+}
+
+#oscar{
+    width: 30%;
+}
+
+#math{
+    margin: 20px;
+    text-align: center;
+}
+
+.italics{
+    font-style: italic;
+    color: red;
+}

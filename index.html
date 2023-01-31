@@ -50,6 +50,38 @@
         </div>
         <input id="mug-input" type="text" oninput="writeOnMug()" placeholder="write on the mug!">
     </div>
+    <div class="bg-2-a">
+        <select onchange="selectFavorites()" id="favorite">
+            <option value="Pam">Pam</option>
+            <option value="Stanley">Stanley</option>
+            <option value="Dwight">Dwight</option>
+            <option value="Kevin">Kevin</option>
+            <option value="Creed">Creed</option>
+        </select>
+        <p id="result">Who is your favorite character?</p>
+    </div>
+    <div class="bg-1-dwight">
+        <div class="dwight-layout">
+            <img src="./assets/dwight.png" id="dwight" alt="dwight">
+            <p id="paragraph" class="class-list-text blue-text">THIS IS A SPEECH</p>
+        </div>
+        <div class="dwight-layout-btn">
+            <button onclick="classButton(1)">Add a class</button>
+            <button onclick="classButton(2)">Remove a class</button>
+            <button onclick="classButton(3)">Toggle a class</button>
+        </div>
+    </div>
+    <div class="bg-2">
+        <img src="./assets/oscar.jpg" alt="oscar" id="oscar">
+        <p id="math">Today we will <span class="italics">argue</span> about <span class="italics">parameters!</span></p>
+        <div>
+            <p onmouseover="mathing(1, 1, 'blue', 'small')">Small Blue</p>
+            <p onmouseover="mathing(2, 2, 'red', 'medium')">Medium Red</p>
+            <p onmouseover="mathing(3, 3, 'orange', 'large')">Large Orange</p>
+            <p onmouseover="mathing(4, 4, 'pink', 'x-large')">X-Large Pink</p>
+            <p onmouseover="mathing(5, 5, 'gray', 'xx-large')">XX-Large Gray</p>
+        </div>
+    </div>
 </body>
 
 </html>
